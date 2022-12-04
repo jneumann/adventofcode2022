@@ -30,7 +30,7 @@ function findElfWeight(input) {
 function part1() {
     let elfWeight = findElfWeight(input)
 
-    console.log("Day 1 Part 1: " + Math.max(...elfWeight))
+    console.log("Part 1: " + Math.max(...elfWeight))
     return;
 }
 
@@ -40,7 +40,7 @@ function part2() {
 
     let topThree = elfWeight[0] + elfWeight[1] + elfWeight[2]
 
-    console.log("Day 1 Part 2: " + topThree)
+    console.log("Part 2: " + topThree)
 
     return;
 }
