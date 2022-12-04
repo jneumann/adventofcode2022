@@ -1,7 +1,5 @@
 const dayArg = process.argv[2];
 
-console.log(dayArg && !!parseInt(dayArg) && parseInt(dayArg)<= 25)
-
 if (dayArg && !!parseInt(dayArg) && parseInt(dayArg) <= 25) {
     console.log(`./days/days${dayArg}`)
     const day = require(`./days/day${dayArg}`)
@@ -11,7 +9,7 @@ if (dayArg && !!parseInt(dayArg) && parseInt(dayArg) <= 25) {
     day.part1();
     day.part2();
 } else {
-    const days = [1, 2]
+    const days = [1, 2, 3, 4]
 
     days.forEach(d => {
         const day = require(`./days/day${d}`)
@@ -20,5 +18,6 @@ if (dayArg && !!parseInt(dayArg) && parseInt(dayArg) <= 25) {
         console.log('======')
         day.part1();
         day.part2()
+        console.log('')
     })
 }
